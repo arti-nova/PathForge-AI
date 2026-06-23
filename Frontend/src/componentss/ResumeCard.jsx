@@ -30,7 +30,7 @@ function ResumeCard() {
       formData.append("resume", file)
 
       const response = await axios.post(
-        "http://localhost:5000/api/ai/analyze-resume",
+        "https://pathforge-ai-backend-m8dw.onrender.com/api/ai/analyze-resume",
         formData,
         { headers: { "Content-Type": "multipart/form-data" } }
       )

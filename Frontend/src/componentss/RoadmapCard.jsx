@@ -11,7 +11,7 @@ function RoadmapCard() {
     try {
       setLoading(true)
       const response = await axios.post(
-        "http://localhost:5000/api/ai/generate-roadmap",
+        "https://pathforge-ai-backend-m8dw.onrender.com/api/ai/generate-roadmap",
         { goal, userEmail: auth.currentUser.email }
       )
       setRoadmap(response.data.roadmap)

@@ -34,7 +34,7 @@ function VoiceAssistant() {
       setStatus("Processing...")
 
       try {
-        const res = await axios.post("http://localhost:5000/api/ai/chat", {
+        const res = await axios.post("https://pathforge-ai-backend-m8dw.onrender.com/api/ai/chat", {
           message: transcript,
         })
         const aiText = res.data.response

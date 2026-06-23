@@ -23,7 +23,7 @@ function InterviewCard() {
       setFeedback("")
 
       const response = await axios.post(
-        "http://localhost:5000/api/ai/interview-question",
+        "https://pathforge-ai-backend-m8dw.onrender.com/api/ai/interview-question",
         { role, industry, skillType }
       )
 
@@ -45,7 +45,7 @@ function InterviewCard() {
       setLoading(true)
 
       const response = await axios.post(
-        "http://localhost:5000/api/ai/evaluate-answer",
+        "https://pathforge-ai-backend-m8dw.onrender.com/api/ai/evaluate-answer",
         {
           question: question?.questions?.[0] || question?.question,
           answer: answer.trim(),

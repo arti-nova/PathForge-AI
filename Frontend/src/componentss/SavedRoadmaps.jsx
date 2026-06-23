@@ -30,7 +30,7 @@ function SavedRoadmaps() {
         const response =
           await axios.get(
 
-            `http://localhost:5000/api/ai/roadmaps/${auth.currentUser.email}`
+            `https://pathforge-ai-backend-m8dw.onrender.com/api/ai/roadmaps/${auth.currentUser.email}`
 
           )
 
